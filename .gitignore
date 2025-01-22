@@ -3,3 +3,6 @@
 
 # Ignore the logs directory and its contents
 logs/
+
+# Ignore virtual environment
+env/
