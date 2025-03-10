@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block title %}<title>Smart Note Summarizer</title>{% endblock %}
+{% block content %}
+<div>
+    <h1>Upload a File to Summarize</h1>
+    <form action="/summarize" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="text/plain" required>
+        <button type="submit">Summarize</button>
+    </form>
+</div>
+{% endblock %}

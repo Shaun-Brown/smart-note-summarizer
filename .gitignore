@@ -1,8 +1,2 @@
-# Ignore all .log files
-*.log
+.env
 
-# Ignore the logs directory and its contents
-logs/
-
-# Ignore virtual environment
-env/
