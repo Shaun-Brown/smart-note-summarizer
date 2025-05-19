@@ -1,7 +1,10 @@
 from transformers import pipeline
 
 # Load model once
-summarizer_model = pipeline('summarization', model='facebook/bart-large-cnn')
+summarizer_model = pipeline(
+    "summarization",
+    model="sshleifer/distilbart-cnn-12-6"
+)
 
 def summarize_text(text):
     if len(text.strip()) == 0:
